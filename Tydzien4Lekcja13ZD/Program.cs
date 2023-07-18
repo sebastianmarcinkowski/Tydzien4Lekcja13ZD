@@ -18,7 +18,7 @@ namespace Tydzien4Lekcja13ZD
 					var game = new FizzBuzz(number);
 					Console.WriteLine($"Teraz moja kolej... {game.Play()}!");
 
-					Console.Write("Aby sprawdzić koleją liczbę wpisz 'TAK' i zatwierdź enterem, w przeciwnym wypadku wystarczy wcisnąć samo enter: ");
+					Console.Write("Aby zagrać jeszcze raz wpisz 'TAK' i zatwierdź enterem, w przeciwnym wypadku wystarczy wcisnąć samo enter: ");
 					if (!(Console.ReadLine().ToUpper() == "TAK"))
 						break;
 					Console.Clear();
