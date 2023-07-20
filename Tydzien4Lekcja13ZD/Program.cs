@@ -8,15 +8,17 @@ namespace Tydzien4Lekcja13ZD
 		{
 			try
 			{
+				var game = new FizzBuzz();
+				var number = 0;
+
 				while (true)
 				{
 					Description();
 
-					var number = GetInt();
+					number = GetInt();
 					Console.Clear();
 
-					var game = new FizzBuzz(number);
-					Console.WriteLine($"Teraz moja kolej... {game.Play()}!");
+					Console.WriteLine($"Teraz moja kolej... {game.Play(number)}!");
 
 					Console.Write("Aby zagrać jeszcze raz wpisz 'TAK' i zatwierdź enterem, w przeciwnym wypadku wystarczy wcisnąć samo enter: ");
 					if (!(Console.ReadLine().ToUpper() == "TAK"))
